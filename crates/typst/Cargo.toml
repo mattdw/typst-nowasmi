@@ -69,7 +69,7 @@ unicode-segmentation = { workspace = true }
 unscanny = { workspace = true }
 usvg = { workspace = true }
 xmlwriter = { workspace = true }
-wasmi = { workspace = true }
+# wasmi = { workspace = true }
 
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
 stacker = { workspace = true }

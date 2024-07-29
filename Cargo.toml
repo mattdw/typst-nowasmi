@@ -5,7 +5,7 @@ resolver = "2"
 
 [workspace.package]
 version = "0.11.0"
-rust-version = "1.77" # also change in ci.yml
+rust-version = "1.77"                         # also change in ci.yml
 authors = ["The Typst Project Developers"]
 edition = "2021"
 homepage = "https://typst.app"
@@ -33,8 +33,13 @@ az = "1.2"
 base64 = "0.22"
 bitflags = { version = "2", features = ["serde"] }
 bytemuck = "1"
-chinese-number = { version = "0.7.2", default-features = false, features = ["number-to-chinese"] }
-chrono = { version = "0.4.24", default-features = false, features = ["clock", "std"] }
+chinese-number = { version = "0.7.2", default-features = false, features = [
+    "number-to-chinese",
+] }
+chrono = { version = "0.4.24", default-features = false, features = [
+    "clock",
+    "std",
+] }
 ciborium = "0.2.1"
 clap = { version = "4.4", features = ["derive", "env"] }
 clap_complete = "4.2.1"
@@ -58,7 +63,11 @@ icu_provider_adapters = "1.4"
 icu_provider_blob = "1.4"
 icu_segmenter = { version = "1.4", features = ["serde"] }
 if_chain = "1"
-image = { version = "0.25", default-features = false, features = ["png", "jpeg", "gif"] }
+image = { version = "0.25", default-features = false, features = [
+    "png",
+    "jpeg",
+    "gif",
+] }
 indexmap = { version = "2", features = ["serde"] }
 kamadak-exif = "0.5"
 kurbo = "0.11"
@@ -71,8 +80,15 @@ notify = "6"
 once_cell = "1"
 open = "5.0.1"
 openssl = "0.10"
-oxipng = { version = "9.0", default-features = false, features = ["filetime", "parallel", "zopfli"] }
-palette = { version = "0.7.3", default-features = false, features = ["approx", "libm"] }
+oxipng = { version = "9.0", default-features = false, features = [
+    "filetime",
+    "parallel",
+    "zopfli",
+] }
+palette = { version = "0.7.3", default-features = false, features = [
+    "approx",
+    "libm",
+] }
 parking_lot = "0.12.1"
 pathdiff = "0.2"
 pdf-writer = "0.10.0"
@@ -86,7 +102,9 @@ quote = "1"
 qcms = "0.3.0"
 rayon = "1.7.0"
 regex = "1"
-resvg = { version = "0.42", default-features = false, features = ["raster-images"] }
+resvg = { version = "0.42", default-features = false, features = [
+    "raster-images",
+] }
 roxmltree = "0.20"
 rustybuzz = "0.14"
 same-file = "1"
@@ -97,20 +115,34 @@ serde_json = "1"
 serde_yaml = "0.9"
 shell-escape = "0.1.5"
 siphasher = "1"
-smallvec = { version = "1.11.1", features = ["union", "const_generics", "const_new"] }
+smallvec = { version = "1.11.1", features = [
+    "union",
+    "const_generics",
+    "const_new",
+] }
 stacker = "0.1.15"
 subsetter = { git = "https://github.com/typst/subsetter", rev = "4e0058b" }
 svg2pdf = { git = "https://github.com/typst/svg2pdf", rev = "39f8ad3" }
 syn = { version = "2", features = ["full", "extra-traits"] }
-syntect = { version = "5", default-features = false, features = ["parsing", "regex-fancy", "plist-load", "yaml-load"] }
+syntect = { version = "5", default-features = false, features = [
+    "parsing",
+    "regex-fancy",
+    "plist-load",
+    "yaml-load",
+] }
 tar = "0.4"
 tempfile = "3.7.0"
 thin-vec = "0.2.13"
 time = { version = "0.3.20", features = ["formatting", "macros", "parsing"] }
 tiny-skia = "0.11"
-toml = { version = "0.8", default-features = false, features = ["parse", "display"] }
+toml = { version = "0.8", default-features = false, features = [
+    "parse",
+    "display",
+] }
 ttf-parser = "0.21.0"
-two-face = { version = "0.4.0", default-features = false, features = ["syntect-fancy"] }
+two-face = { version = "0.4.0", default-features = false, features = [
+    "syntect-fancy",
+] }
 typed-arena = "2"
 unicode-bidi = "0.3.13"
 unicode-ident = "1.0"
@@ -118,10 +150,14 @@ unicode-math-class = "0.1"
 unicode-script = "0.5"
 unicode-segmentation = "1"
 unscanny = "0.1"
-ureq = { version = "2", default-features = false, features = ["native-tls", "gzip", "json"] }
+ureq = { version = "2", default-features = false, features = [
+    "native-tls",
+    "gzip",
+    "json",
+] }
 usvg = { version = "0.42", default-features = false, features = ["text"] }
 walkdir = "2"
-wasmi = "0.34.0"
+# wasmi = "0.34.0"
 xmlparser = "0.13.5"
 xmlwriter = "0.1.0"
 xmp-writer = "0.2"
